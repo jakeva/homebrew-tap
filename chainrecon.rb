@@ -5,21 +5,21 @@
 class Chainrecon < Formula
   desc "Find the next supply chain attack before the attacker does."
   homepage "https://github.com/chainrecon/chainrecon"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chainrecon/chainrecon/releases/download/v0.3.0/chainrecon_0.3.0_darwin_amd64.tar.gz"
-      sha256 "eeffe08fb94171a1215187be047a4b757239bd207bcd1580c75dacacc19b2f01"
+      url "https://github.com/chainrecon/chainrecon/releases/download/v0.4.0/chainrecon_0.4.0_darwin_amd64.tar.gz"
+      sha256 "1c24e9864e65d4e6e5562bd25ea50380ca4b4b5960c79a31d414b96297deb492"
 
       define_method(:install) do
         bin.install "chainrecon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chainrecon/chainrecon/releases/download/v0.3.0/chainrecon_0.3.0_darwin_arm64.tar.gz"
-      sha256 "b46ac16cf61ee96bf34fc2f0862bb8edb6ab22dadf2a5b4f17459ba47e90e914"
+      url "https://github.com/chainrecon/chainrecon/releases/download/v0.4.0/chainrecon_0.4.0_darwin_arm64.tar.gz"
+      sha256 "4467b6ca681bde95145f0116465ff33f2d960a1baee1cb46c1c0fd836bc8e21b"
 
       define_method(:install) do
         bin.install "chainrecon"
@@ -29,15 +29,15 @@ class Chainrecon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chainrecon/chainrecon/releases/download/v0.3.0/chainrecon_0.3.0_linux_amd64.tar.gz"
-      sha256 "e82d98d977a6981e712a572a32fa4b81a8e07e691183f0676dd551cf5ec11ad6"
+      url "https://github.com/chainrecon/chainrecon/releases/download/v0.4.0/chainrecon_0.4.0_linux_amd64.tar.gz"
+      sha256 "72c221a53188defc625122b4f939a9474ebd67fcd52d6c1b4193a194fe847eae"
       define_method(:install) do
         bin.install "chainrecon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chainrecon/chainrecon/releases/download/v0.3.0/chainrecon_0.3.0_linux_arm64.tar.gz"
-      sha256 "3384bd162d0a860a761fbb6d83a0964d90c4decd041eafdfa7d412b5a9be1900"
+      url "https://github.com/chainrecon/chainrecon/releases/download/v0.4.0/chainrecon_0.4.0_linux_arm64.tar.gz"
+      sha256 "90a0c00ebbf0c97945bdb7cc4b1755e93cac4ff3697de9e7c8f1ab55ba15fb37"
       define_method(:install) do
         bin.install "chainrecon"
       end
