@@ -1,6 +1,6 @@
 # homebrew-tap
 
-Homebrew tap for [chainrecon](https://github.com/chainrecon/chainrecon).
+Homebrew tap for [chainrecon](https://github.com/jakeva/chainrecon).
 
 ```bash
 brew install chainrecon/tap/chainrecon
